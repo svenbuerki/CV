@@ -211,6 +211,8 @@ intro_text <- glue("Assistant Professor, Department of Biological Sciences at [B
 cat(sanitize_links(intro_text))
 ```
 
+My lab applies a genome-to-phenome approach to investigate mechanisms of drought adaptations in natural ecosystems. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org/) project. 
+
 I am broadly interested in bioinformatics, genomics, molecular evolution and reproducible science.
 
 
