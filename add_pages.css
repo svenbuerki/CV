@@ -9,4 +9,19 @@
     content: counter(page);
   }
 }
-
+@page :left {
+  @top-left{
+    content: "BUERKI S.";
+  }
+  @top-right{
+    content: "Curriculum Vitae";
+  }
+}
+@page :right {
+  @top-left{
+    content: "BUERKI S.";
+  }
+  @top-right{
+    content: "Curriculum Vitae";
+  }
+}
