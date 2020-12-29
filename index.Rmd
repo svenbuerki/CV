@@ -4,7 +4,7 @@ author: Sven Buerki
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
-    css: ['styles.css']
+    css: ['add_pages.css','styles.css']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
 ---
@@ -176,7 +176,7 @@ Aside
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links at _guangchuangyu.github.io/cv_")
+  #cat("View this CV online with links at _guangchuangyu.github.io/cv_")
 }
 ```
 
@@ -185,8 +185,8 @@ Contact {#contact}
 
 
 - <i class="fa fa-envelope"></i> svenbuerki@boisestate.edu
-- <i class="fa fa-github"></i> github.com/svenbuerki
-- **ORCID** [0000-0002-8299-6539](https://orcid.org/0000-0002-8299-6539)
+- <i class="fa fa-github"></i> [svenbuerki](https://github.com/svenbuerki)
+- **ORCID** [0000-0002-8299-6539](http://orcid.org/0000-0002-8299-6539)
 - <i class="fa fa-phone"></i> +1 208-426-1146
 
 
@@ -197,7 +197,6 @@ Disclaimer {#disclaimer}
 Last updated on `r Sys.Date()`.
 
 
-
 Main
 ================================================================================
 
@@ -206,12 +205,12 @@ Sven Buerki {#title}
 
 
 ```{r, results='asis'}
-intro_text <- glue("Assistant Professor, Department of Biological Sciences at [Boise State University](https://www.boisestate.edu/biology/).")
+intro_text <- glue("Assistant Professor, Department of Biological Sciences at Boise State University.")
 
 cat(sanitize_links(intro_text))
 ```
 
-My lab applies a genome-to-phenome approach to investigate mechanisms of drought adaptations in natural ecosystems. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org/) project. 
+My lab applies a genome-to-phenome approach to investigate mechanisms of drought adaptations in natural ecosystems. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org) project. 
 
 I am broadly interested in bioinformatics, genomics, molecular evolution and reproducible science.
 
@@ -223,14 +222,24 @@ Research Experience {data-icon=laptop}
 print_section(position_data, 'research_positions')
 ```
 
+\pagebreak
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
+
 
 ```{r, results='asis', echo = FALSE}
 print_section(position_data, 'education')
 ```
 
+:::aside
+### Skills 
+
+- <i class="fa fa-laptop"></i> **Programming**: R, RMarkdown, LaTeX, bash, HTML, GitHub
+- <i class="fa fa-flask"></i> **Laboratory**: NGS, Sanger, PCR, tissue culture
+- <i class="fa fa-lightbulb-o"></i> **Other**: GxE experiments, Reproducible Science
+
+:::
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
@@ -241,7 +250,6 @@ print_section(position_data, 'teaching_positions')
 ```
 
 
-
 Grants  {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
@@ -249,14 +257,47 @@ Grants  {data-icon=chart-line}
 print_section(position_data, 'grant')
 ```
 
+\pagebreak
+
+Graduate students {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'students')
+```
+
+:::aside
+### Fieldwork experience {data-icon=binoculars}
+
+- **Botanical expeditions**: Croatia, Fiji, Italy, Madagascar, Malaysia (Borneo and Peninsular Malaysia), Mauritius, New Caledonia, Singapore, Switzerland and USA. 
+:::
+
+Research staff {data-icon=fa-flask}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'research_staff')
+```
+
+Graduate committees
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'graduate_committee')
+```
+
 External referee
 --------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'ext_ref')
+```
 
-Publications in peer-reviewed journals {data-icon=book}
---------------------------------------------------------------------------------
+:::aside
 
-::: aside
+### Scholar metrics
+
+I have authored 101 Web of Knowledge papers (among which 28 as first and 29 as senior author) with 213 co-authors based in 37 countries, demonstrating my international recognition and my ability to collaborate with other scientists in a wide range of fields.
 
 ```{r}
 profile = jsonlite::fromJSON("profile.json")
@@ -276,17 +317,30 @@ profile = jsonlite::fromJSON("profile.json")
 ![](citation.png)
 :::
 
-```{r, results='asis'}
-intro_text2 <- glue("I have authored 100 Web of Knowledge papers (among which 28 as first and 28 as senior author) with 213 co-authors based in 37 countries, demonstrating my international recognition and my ability to collaborate with other scientists in a wide range of fields.")
+\pagebreak
 
-cat(sanitize_links(intro_text2))
-```
+Publications in peer-reviewed journals {data-icon=book}
+--------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'academic_articles')
 ```
 
+Publications in review {data-icon=book}
+--------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'in_review')
+```
+
+:::aside
+### Taxonomic novelties
+
+- I have been working on the molecular systematics of flowering plants, especially Sapindaceae and Pandanaceae. Throughout this work, I had the opportunity to contribute:
+  + **Newly described taxa**: 1 family, 4 genera, 3 sections, and 33 species.
+  + **New names**: 1 species.
+  + **New combinations**: 114 species, and 1 subspecies.
+:::
 
 Books {data-icon=book}
 --------------------------------------------------------------------------------
@@ -295,16 +349,45 @@ Books {data-icon=book}
 print_section(position_data, 'book_chapters')
 ```
 
+\pagebreak
 
-Conference proceedings {data-icon=group}
+Other Publications {data-icon=book}
 --------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'other_pub')
+```
 
+
+Conferences, seminars and invited speaker {data-icon=group}
+--------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'presentation')
 ```
 
+:::aside
+### Eponymy
+
+- In 2005, I was fortunate to be part of a botanical expedition in the Ambohimirahavavy region (Madagascar) where I collected a specimen of Meliaceae, which turned out to represent a new species. My friends were very kind and dedicated this new species to me: _**Turraea buerkii**_ Callm., Phillipson & Lowry, *Adansonia*, *sér.* 3, 34(1): 100. 2012.
+![logo](Turrea.jpg){width=100%}
+:::
+
+Organisation of symposia {data-icon=group}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'symposia_organization')
+```
+
+\pagebreak
+
+Posters {data-icon=group}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'posters')
+```
 
 ```{r}
 if(PDF_EXPORT){
@@ -317,10 +400,9 @@ Links {data-icon=link}
 
 ")
   
-  walk2(links, 1:length(links), function(link, index){
+  purrr::walk2(links, 1:length(links), function(link, index){
     print(glue('{index}. {link}'))
   })
 }
 ```
-
 
