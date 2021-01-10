@@ -1,0 +1,27 @@
+/*Add page number to the bottom right of the left and right pages */
+@page :left {
+  @bottom-right {
+    content: counter(page);
+  }
+}
+@page :right {
+  @bottom-right {
+    content: counter(page);
+  }
+}
+@page :left {
+  @top-left{
+    content: "BUERKI S.";
+  }
+  @top-right{
+    content: "Curriculum Vitae";
+  }
+}
+@page :right {
+  @top-left{
+    content: "BUERKI S.";
+  }
+  @top-right{
+    content: "Curriculum Vitae";
+  }
+}
