@@ -228,14 +228,14 @@ Sven Buerki {#title}
 
 
 ```{r, results='asis'}
-intro_text <- glue("Assistant Professor, Department of Biological Sciences at Boise State University. My lab applies a genome-to-phenome approach to investigate mechanisms of drought adaptations in natural ecosystems. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org) project. 
+intro_text <- glue("Assistant Professor, Department of Biological Sciences at Boise State University. My research interests are in the fields of genomics, evolutionary plant biology and bioinformatics. 
 
-I am broadly interested in bioinformatics, genomics, molecular evolution and reproducible science.")
+                   My lab applies a genome-to-phenome approach to investigate mechanisms of drought adaptations in plants and focuses on forecasting the effect of climate change on natural ecosystems. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org) project. 
+                   
+                   Since the Fall of 2020, I am acting as co-lead for the [GEM3 Sagebrush Mechanism](https://www.idahogem3.org/organizational-chart) component of the project. I am leading a team aiming at sequencing, phasing and annotating the 9.5 Gbp diploid genome of basin big sagebrush. More on the Sagebrush Genome Project can be found [here](https://svenbuerki.github.io/Sagebrush_Genome_Project/).")
 
 cat(sanitize_links(intro_text))
 ```
-
-
 
 
 Research Experience {data-icon=laptop}
@@ -313,17 +313,6 @@ External referee
 ```{r}
 print_section(position_data, 'ext_ref')
 ```
-
-
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-
-
-```{r}
-print_section(position_data, 'teaching_positions')
-```
-
 
 
 Publications in peer-reviewed journals {data-icon=book}
