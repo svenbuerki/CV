@@ -355,6 +355,7 @@ glue(
 print_section(position_data, 'academic_articles')
 ```
 
+\newpage
 
 Publications in review {data-icon=book}
 --------------------------------------------------------------------------------
@@ -394,6 +395,7 @@ glue(
 print_section(position_data, 'other_pub')
 ```
 
+\newpage
 
 Conferences, seminars and invited speaker {data-icon=group}
 --------------------------------------------------------------------------------
@@ -403,6 +405,7 @@ Conferences, seminars and invited speaker {data-icon=group}
 print_section(position_data, 'presentation')
 ```
 
+\newpage
 
 Organization of symposia {data-icon=group}
 --------------------------------------------------------------------------------
