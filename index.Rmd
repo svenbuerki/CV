@@ -186,6 +186,7 @@ Contact {#contact}
 - <i class="fa fa-envelope"></i> svenbuerki@boisestate.edu
 - <i class="fa fa-github"></i> [svenbuerki](https://github.com/svenbuerki)
 - **ORCID** [0000-0002-8299-6539](http://orcid.org/0000-0002-8299-6539)
+- **R package:** [G2PMineR](https://buerkilabteam.github.io/G2PMineR_Web/)
 - <i class="fa fa-phone"></i> +1 208-426-1146
 
 <br>
