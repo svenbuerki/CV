@@ -186,32 +186,20 @@ Contact {#contact}
 - <i class="fa fa-envelope"></i> svenbuerki@boisestate.edu
 - <i class="fa fa-github"></i> [svenbuerki](https://github.com/svenbuerki)
 - **ORCID** [0000-0002-8299-6539](http://orcid.org/0000-0002-8299-6539)
-- **R package:** [G2PMineR](https://buerkilabteam.github.io/G2PMineR_Web/)
 - <i class="fa fa-phone"></i> +1 208-426-1146
 
 <br>
 
-```{r}
-profile = jsonlite::fromJSON("profile.json")
-cites = jsonlite::fromJSON("citation.json")
-if (profile$total_cites < sum(cites$cites))
-  profile$total_cites <- sum(cites$cites)
-
-glue(
-
-"
-+ Citation = {profile$total_cites}
-+ H-index = {profile$h_index}
-+ I10-index = {profile$i10_index}
-
-"
-  ) %>% print()
-
-```
-
-![](citation.png)
+Skills {#skills}
+--------------------------------------------------------------------------------
 
 
+<i class="fa fa-laptop"></i> **Programming**: R, RMarkdown, LaTeX, bash, HTML, Git, GitHub  <br>
+<i class="fa fa-laptop"></i> **R package:** [G2PMineR](https://buerkilabteam.github.io/G2PMineR_Web/)  <br>
+<i class="fa fa-flask"></i> **Laboratory**: Next-generation sequencing (WGS, RNAseq), Sanger, PCR, tissue culture  <br>
+<i class="fa fa-lightbulb-o"></i> **Other**: GxE experiments, Reproducible Science, Taxonomy <br> 
+
+<br>
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
@@ -238,16 +226,6 @@ intro_text <- glue("Assistant Professor, Department of Biological Sciences at Bo
 cat(sanitize_links(intro_text))
 ```
 
-
-Research Experience {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r, results='asis', echo = FALSE}
-print_section(position_data, 'research_positions')
-```
-
-\pagebreak
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -256,68 +234,48 @@ print_section(position_data, 'education')
 ```
 
 
-Teaching Experience {data-icon=chalkboard-teacher}
+Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r, results='asis', echo = FALSE}
-print_section(position_data, 'teaching_positions')
+print_section(position_data, 'research_positions')
 ```
-
-
-Grants  {data-icon=chart-line}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'grant')
-```
-
-
-Graduate students {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'students')
-```
-
-Research staff {data-icon=fa-flask}
---------------------------------------------------------------------------------
-
-::: aside
-
-![](figures/the-garden_s-new-caledonia-team.png){width=100%}
-```{r}
-glue(
-  " 
-  **Botanical expeditions**: Croatia, Fiji, Italy, Madagascar, Malaysia (Borneo and Peninsular Malaysia), Mauritius, New Caledonia, Singapore, Switzerland and USA.
-  "
-) %>% print()
-```
-
-:::
-
-```{r}
-print_section(position_data, 'research_staff')
-```
-
-Graduate committees
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'graduate_committee')
-```
-
-External referee
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'ext_ref')
-```
-
 
 Publications in peer-reviewed journals {data-icon=book}
 --------------------------------------------------------------------------------
 
+:::aside
+
+<span style="text-transform:uppercase">Publication metrics</span>  
+
+<p style="text-align:justify;">I have authored <b>103 Web of Knowledge papers</b> (among which 28 as first and 32 as senior author) with >250 co-authors based in >40 countries, demonstrating my international recognition and my ability to collaborate with other scientists in a wide range of fields. Since I joined BSU in the Fall of 2017, I have authored 23 papers and published with graduate students (see publications <span style="color:blue">#103, 101, 99, 95, 92, 89)</span>.</p>
+
+```{r, eval=T}
+profile = jsonlite::fromJSON("profile.json")
+cites = jsonlite::fromJSON("citation.json")
+if (profile$total_cites < sum(cites$cites))
+  profile$total_cites <- sum(cites$cites)
+
+glue(
+
+"
++ Citation = {profile$total_cites}
++ H-index = {profile$h_index}
++ I10-index = {profile$i10_index}
+
+"
+  ) %>% print()
+
+```
+
+![](citation.png)
+
+:::
+
+
+```{r}
+print_section(position_data, 'academic_articles')
+```
 
 ::: aside
 
@@ -339,24 +297,27 @@ glue(
 ) %>% print()
 ```
 
-![](figures/Gouania-callmanderi-A-Flower-showing-the-lobes-of-the-disc-reaching-one-fourth-of-the.png){width=100%}
+
+<span style="text-transform:uppercase">Plant taxonomic novelties</span>
+
 ```{r}
 glue(
   " 
-  **Contributions to describing plant biodiversity:**
-  i) Newly described taxa: 1 family, 4 genera, 3 sections, and 33 species; ii) New names: 1 species and iii) New combinations: 114 species, and 1 subspecies.
+  + 1 family 
+  + 4 genera 
+  + 3 sections
+  + 33 species
+  + 1 new name
+  + 114 comb. nov.
   "
 ) %>% print()
 ```
-
+  
+<br>
+![](figures/Gouania-callmanderi-A-Flower-showing-the-lobes-of-the-disc-reaching-one-fourth-of-the.png){width=100%}
 
 :::
 
-```{r}
-print_section(position_data, 'academic_articles')
-```
-
-\newpage
 
 Publications in review {data-icon=book}
 --------------------------------------------------------------------------------
@@ -380,23 +341,17 @@ Other Publications {data-icon=book}
 
 ::: aside
 
-![](figures/Turrea.jpg){width=100%}
-```{r}
-glue(
-  " 
-  As part of a botanical expedition in the Ambohimirahavavy region (Madagascar) I collected a specimen of Meliaceae, which turned out to represent a new species. My friends were very kind and dedicated this new species to me and my family: _**Turraea buerkii**_ Callm., Phillipson & Lowry, *Adansonia*, *sér.* 3, 34(1): 100. 2012.
-  "
-) %>% print()
-```
+<span style="text-transform:uppercase">Eponymy</span>
 
+<p style="text-align:justify;">As part of a botanical expedition in the Ambohimirahavavy region (Madagascar) I collected a specimen of Meliaceae, which turned out to represent a new species. My friends were very kind and dedicated this new species to me and my family: _**Turraea buerkii**_ Callm., Phillipson & Lowry, *Adansonia*, *sér.* 3, 34(1): 100. 2012.</p>
+  
+![](figures/Turrea.jpg){width=100%}
 :::
 
 
 ```{r}
 print_section(position_data, 'other_pub')
 ```
-
-\newpage
 
 Conferences, seminars and invited speaker {data-icon=group}
 --------------------------------------------------------------------------------
@@ -405,8 +360,6 @@ Conferences, seminars and invited speaker {data-icon=group}
 ```{r}
 print_section(position_data, 'presentation')
 ```
-
-\newpage
 
 Organization of symposia {data-icon=group}
 --------------------------------------------------------------------------------
@@ -422,6 +375,72 @@ Posters {data-icon=group}
 print_section(position_data, 'posters')
 ```
 
+Grants  {data-icon=chart-line}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'grant')
+```
+
+Teaching Experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+::: aside
+
+<span style="text-transform:uppercase">Teaching/Lab. ethos</span>
+
+<blockquote>
+Everyone here is smart; distinguish yourself by being kind.
+</blockquote>
+<p> -- Kindness in Science is an inclusive approach that fosters diversity, respect, wellbeing & openness leading to better science outcomes.</p>
+
+![](figures/Kindness.png){width=100%}
+:::
+
+
+```{r, results='asis', echo = FALSE}
+print_section(position_data, 'teaching_positions')
+```
+
+Graduate students {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+
+```{r}
+print_section(position_data, 'students')
+```
+
+\newpage
+
+Research staff {data-icon=fa-flask}
+--------------------------------------------------------------------------------
+
+::: aside
+
+<span style="text-transform:uppercase">Fieldwork</span>
+
+<p style="text-align:justify;">**Botanical expeditions** in Croatia, Fiji, Italy, Madagascar, Malaysia (Borneo and Peninsular Malaysia), Mauritius, New Caledonia, Singapore, Switzerland and USA.</p>
+
+![](figures/the-garden_s-new-caledonia-team.png){width=100%}
+:::
+
+```{r}
+print_section(position_data, 'research_staff')
+```
+
+Graduate committees
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'graduate_committee')
+```
+
+External referee
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'ext_ref')
+```
 
 ```{r}
 if(PDF_EXPORT){
