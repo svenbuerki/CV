@@ -208,13 +208,11 @@ Disclaimer {#disclaimer}
 Last updated on `r Sys.Date()`.
 
 
-
 Main
 ================================================================================
 
 Sven Buerki {#title}
 --------------------------------------------------------------------------------
-
 
 ```{r, results='asis'}
 intro_text <- glue("Assistant Professor, Department of Biological Sciences at Boise State University. My research interests are in the fields of genomics, evolutionary plant biology and bioinformatics. 
@@ -241,14 +239,11 @@ Research Experience {data-icon=laptop}
 print_section(position_data, 'research_positions')
 ```
 
+
 Publications in peer-reviewed journals {data-icon=book}
 --------------------------------------------------------------------------------
-
 :::aside
-
 <span style="text-transform:uppercase">Publication metrics</span>  
-
-<p style="text-align:justify;">I have authored <b>103 Web of Knowledge papers</b> (among which 28 as first and 32 as senior author) with >250 co-authors based in >40 countries, demonstrating my international recognition and my ability to collaborate with other scientists in a wide range of fields. Since I joined BSU in the Fall of 2017, I have authored 23 papers and published with graduate students (see publications <span style="color:blue">#103, 101, 99, 95, 92, 89)</span>.</p>
 
 ```{r, eval=T}
 profile = jsonlite::fromJSON("profile.json")
@@ -259,6 +254,8 @@ if (profile$total_cites < sum(cites$cites))
 glue(
 
 "
++ N. publications = 105 (29 as first and 33 as senior author)
++ N. publications @ BSU = 25 (6 with graduate students: #103, 101, 99, 95, 92, 89)
 + Citation = {profile$total_cites}
 + H-index = {profile$h_index}
 + I10-index = {profile$i10_index}
@@ -269,9 +266,7 @@ glue(
 ```
 
 ![](citation.png)
-
 :::
-
 
 ```{r}
 print_section(position_data, 'academic_articles')
@@ -353,28 +348,6 @@ Other Publications {data-icon=book}
 print_section(position_data, 'other_pub')
 ```
 
-Conferences, seminars and invited speaker {data-icon=group}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'presentation')
-```
-
-Organization of symposia {data-icon=group}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'symposia_organization')
-```
-
-Posters {data-icon=group}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'posters')
-```
-
 Grants  {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
@@ -410,7 +383,6 @@ Graduate students {data-icon=chalkboard-teacher}
 print_section(position_data, 'students')
 ```
 
-\newpage
 
 Research staff {data-icon=fa-flask}
 --------------------------------------------------------------------------------
@@ -438,8 +410,50 @@ print_section(position_data, 'graduate_committee')
 External referee
 --------------------------------------------------------------------------------
 
+::: aside
+
+<span style="text-transform:uppercase">Services</span>
+
+```{r, eval=T}
+glue(
+
+"
++ BSU, dept. Biological Sciences: Graduate program steering committee (MS Biology, MS Raptor)
++ Idaho EPSCoR, GEM3: Co-lead Sagebrush Mechanism team
++ Idaho EPSCoR, GEM3: Data management working group
+
+"
+  ) %>% print()
+
+```
+
+:::
+
 ```{r}
 print_section(position_data, 'ext_ref')
+```
+
+
+Conferences, seminars and invited speaker {data-icon=group}
+--------------------------------------------------------------------------------
+
+
+```{r}
+print_section(position_data, 'presentation')
+```
+
+Organization of symposia {data-icon=group}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'symposia_organization')
+```
+
+Posters {data-icon=group}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'posters')
 ```
 
 ```{r}
