@@ -254,8 +254,8 @@ if (profile$total_cites < sum(cites$cites))
 glue(
 
 "
-+ N. publications = 105 (29 as first and 33 as senior author)
-+ N. publications @ BSU = 25 (6 with graduate students: #103, 101, 99, 95, 92, 89)
++ N. publications = 108 (29 as first and 34 as senior author)
++ N. publications @ BSU = 28 (7 with graduate students: #106, 103, 101, 99, 95, 92, 89)
 + Citation = {profile$total_cites}
 + H-index = {profile$h_index}
 + I10-index = {profile$i10_index}
@@ -299,6 +299,7 @@ glue(
 glue(
   " 
   + 1 family 
+  + 6 tribes
   + 4 genera 
   + 3 sections
   + 33 species
@@ -313,6 +314,7 @@ glue(
 
 :::
 
+\newpage
 
 Publications in review {data-icon=book}
 --------------------------------------------------------------------------------
