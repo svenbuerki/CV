@@ -219,7 +219,7 @@ intro_text <- glue("Assistant Professor, Department of Biological Sciences at Bo
 
                    My lab applies a genome-to-phenome approach to investigate mechanisms of drought adaptations in plants and focuses on forecasting the effect of climate change on natural ecosystems. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* (or sagebrush) as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org) project. 
                    
-                   Since the Fall of 2020, I am acting as co-lead for the [GEM3 Sagebrush Mechanism](https://www.idahogem3.org/organizational-chart) component of the project. I am leading a team aiming at sequencing, phasing and annotating the 9.5 Gbp diploid genome of sagebrush. More details on the Sagebrush Genome Project can be found [here](https://svenbuerki.github.io/Sagebrush_Genome_Project/).")
+                   Since the Fall of 2020, I am acting as co-lead of the [GEM3 Sagebrush Mechanism](https://www.idahogem3.org/organizational-chart) team. I am responsible for constructing a model genome for sagebrush and measuring genotypic and phenotypic responses of shrubs to environmental change. More details on the Sagebrush Genome Project can be found [here](https://svenbuerki.github.io/Sagebrush_Genome_Project/).")
 
 cat(sanitize_links(intro_text))
 ```
@@ -355,7 +355,6 @@ Grants  {data-icon=chart-line}
 print_section(position_data, 'grant')
 ```
 
-\newpage
 
 Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
