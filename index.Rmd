@@ -254,8 +254,8 @@ if (profile$total_cites < sum(cites$cites))
 glue(
 
 "
-+ N. publications = 111 (29 as first and 37 as senior author)
-+ N. publications @ BSU = 31 (8 with graduate students: #111, 106, 103, 101, 99, 95, 92, 89)
++ N. publications = 111 (29 as first and 38 as senior author)
++ N. publications @BSU = 33 (9 with graduate students: #113, 112, 106, 103, 101, 99, 95, 92, 89)
 + Citation = {profile$total_cites}
 + H-index = {profile$h_index}
 + I10-index = {profile$i10_index}
