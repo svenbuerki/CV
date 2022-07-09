@@ -1,4 +1,12 @@
-## My pagedown rendered CV
+# My pagedown rendered CV
+
+## GitHub webpage
+
+You can access my CV here:
+
+https://svenbuerki.github.io/CV/
+
+## Information on packages and files
 
 This repo contains the source-code and results of my CV built with the [pagedown package](https://pagedown.rbind.io) and a modified version of the 'resume' template. 
 
