@@ -342,16 +342,6 @@ print_section(position_data, 'other_pub')
 
 Outreach {data-icon=book}
 --------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'outreach')
-```
-
-
-
-Grants  {data-icon=chart-line}
---------------------------------------------------------------------------------
 ::: aside
 
 <span style="text-transform:uppercase">Eponymy</span>
@@ -360,6 +350,14 @@ Grants  {data-icon=chart-line}
   
 ![](figures/Turrea.jpg){width=100%}
 :::
+
+```{r}
+print_section(position_data, 'outreach')
+```
+
+
+Grants  {data-icon=chart-line}
+--------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'grant')
@@ -397,14 +395,6 @@ print_section(position_data, 'students')
 
 Research staff {data-icon=fa-flask}
 --------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'research_staff')
-```
-
-Graduate committees
---------------------------------------------------------------------------------
-
 ::: aside
 
 <span style="text-transform:uppercase">Fieldwork</span>
@@ -413,6 +403,13 @@ Graduate committees
 
 ![](figures/the-garden_s-new-caledonia-team.png){width=100%}
 :::
+
+```{r}
+print_section(position_data, 'research_staff')
+```
+
+Graduate committees
+--------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'graduate_committee')
