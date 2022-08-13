@@ -340,6 +340,16 @@ Other Publications {data-icon=book}
 print_section(position_data, 'other_pub')
 ```
 
+Outreach {data-icon=book}
+--------------------------------------------------------------------------------
+
+
+```{r}
+print_section(position_data, 'outreach')
+```
+
+
+
 Grants  {data-icon=chart-line}
 --------------------------------------------------------------------------------
 ::: aside
