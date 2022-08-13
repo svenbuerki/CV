@@ -255,7 +255,7 @@ glue(
 
 "
 + N. publications = 114 (29 as first and 39 as senior author)
-+ N. publications @BSU = 33 (9 with graduate students: #114, 113, 112, 106, 103, 101, 99, 95, 92, 89)
++ N. publications @BSU = 34 (10 with graduate students: #114, 113, 112, 106, 103, 101, 99, 95, 92, 89)
 + Citation = {profile$total_cites}
 + H-index = {profile$h_index}
 + I10-index = {profile$i10_index}
