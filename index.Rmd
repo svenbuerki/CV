@@ -170,7 +170,7 @@ Aside
 ================================================================================
 
 
-![logo](Buerki_Rafflesia.jpeg){width=100%}
+![logo](Sven_Buerki.PORTRAIT.jpeg){width=100%}
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
@@ -254,8 +254,8 @@ if (profile$total_cites < sum(cites$cites))
 glue(
 
 "
-+ N. publications = 121 (29 as first and 42 as senior author)
-+ N. publications @BSU = 39 (10 with graduate students: #116-112, 106, 103, 101, 99, 95, 92, 89)
++ N. publications = 122 (29 as first and 42 as senior author)
++ N. publications @BSU = 40 (11 with graduate students)
 + Citation = {profile$total_cites}
 + H-index = {profile$h_index}
 + I10-index = {profile$i10_index}
@@ -338,8 +338,6 @@ Other Publications {data-icon=book}
 ```{r}
 print_section(position_data, 'other_pub')
 ```
-
-\newpage
 
 Outreach {data-icon=book}
 --------------------------------------------------------------------------------
