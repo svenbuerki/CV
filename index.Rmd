@@ -217,9 +217,7 @@ Sven Buerki {#title}
 ```{r, results='asis'}
 intro_text <- glue("Associate Professor, Department of Biological Sciences at Boise State University. My research interests are in the fields of genomics, evolutionary plant biology and bioinformatics. 
 
-                   My lab aims at contributing to advancing fundamental knowledge of the rules of life (with a genome-to-phenome focus) underpinning plants' drought and heat tolerance. Such evidence is then used to forecast the effect of climate change on natural ecosystems and develop restoration practices. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* (or sagebrush) as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org) project. 
-                   
-                   Since the Fall of 2020, I am acting as co-lead of the [GEM3 Sagebrush Mechanism](https://www.idahogem3.org/organizational-chart) team. I am responsible for constructing a model genome for sagebrush and measuring genotypic and phenotypic responses of populations to rapid environmental changes. More details on the Sagebrush Genome Project can be found [here](https://svenbuerki.github.io/Sagebrush_Genome_Project/).")
+                   My lab aims at contributing to advancing fundamental knowledge of the rules of life (with a genome-to-phenome focus) underpinning plants' drought and heat tolerance. Such evidence is then used to forecast the effect of climate change on natural ecosystems and develop restoration practices. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* (or sagebrush) as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org) project.")
 
 cat(sanitize_links(intro_text))
 ```
@@ -254,8 +252,8 @@ if (profile$total_cites < sum(cites$cites))
 glue(
 
 "
-+ N. publications = 123 (29 as first and 42 as senior author)
-+ N. publications @BSU = 41 (11 with graduate students)
++ N. publications = 125 (29 as first and 43 as senior author)
++ N. publications @BSU = 43 (11 with graduate students)
 + Citation = {profile$total_cites}
 + H-index = {profile$h_index}
 + I10-index = {profile$i10_index}
