@@ -215,9 +215,14 @@ Sven Buerki {#title}
 --------------------------------------------------------------------------------
 
 ```{r, results='asis'}
-intro_text <- glue("Associate Professor, Department of Biological Sciences at Boise State University. My research interests are in the fields of genomics, evolutionary plant biology and bioinformatics. 
+intro_text <- glue("Dr. Christopher Davidson Endowed Chair in Botany and Associate Professor, Department of Biological Sciences at Boise State University
 
-                   My lab aims at contributing to advancing fundamental knowledge of the rules of life (with a genome-to-phenome focus) underpinning plants' drought and heat tolerance. Such evidence is then used to forecast the effect of climate change on natural ecosystems and develop restoration practices. We are currently focusing our efforts on the sagebrush steppe of western North America by using *Artemisia tridentata* (or sagebrush) as model organism. This research is integrated into the [EPSCoR NSF GEM3](https://www.idahogem3.org) project.")
+I am an evolutionary biologist specializing in the genomic mechanisms that underpin plant resilience to global change, including climate change, land-use transformation, and biological invasions. My lab works in close collaboration with landscape stakeholders to develop applied, science-based strategies for genetic rescue, ecological restoration, and long-term ecosystem health.
+
+To support these efforts, we design and implement innovative plant propagation and biobanking technologies that facilitate fundamental research and produce actionable knowledge for conservation and restoration. My lab is committed to a team science approach that integrates academic and practitioner expertise through shared goals, collaborative processes, and a unified technical vocabulary.
+
+In addition to my work in plant resilience, I have expertise in plant taxonomy, molecular systematics, and biogeography. I have a particular interest in the application of international biodiversity informatics standards—such as controlled vocabularies and ontologies—to support robust, interoperable data dissemination.
+")
 
 cat(sanitize_links(intro_text))
 ```
@@ -237,9 +242,6 @@ Research Experience {data-icon=laptop}
 print_section(position_data, 'research_positions')
 ```
 
-
-Publications in peer-reviewed journals {data-icon=book}
---------------------------------------------------------------------------------
 :::aside
 <span style="text-transform:uppercase">Publication metrics</span>  
 
@@ -252,8 +254,8 @@ if (profile$total_cites < sum(cites$cites))
 glue(
 
 "
-+ N. publications = 125 (29 as first and 43 as senior author)
-+ N. publications @BSU = 43 (11 with graduate students)
++ N. publications = 131 (29 as first and 44 as senior author)
++ N. publications @BSU = 46 (14 with graduate students)
 + Citation = {profile$total_cites}
 + H-index = {profile$h_index}
 + I10-index = {profile$i10_index}
@@ -265,6 +267,9 @@ glue(
 
 ![](citation.png)
 :::
+
+Publications in peer-reviewed journals {data-icon=book}
+--------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'academic_articles')
