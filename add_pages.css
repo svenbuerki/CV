@@ -12,16 +12,32 @@
 @page :left {
   @top-left{
     content: "BUERKI S.";
+    color: #444444;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
   }
   @top-right{
     content: "Curriculum Vitae";
+    color: #444444;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
   }
 }
 @page :right {
   @top-left{
     content: "BUERKI S.";
+    color: #444444;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
   }
   @top-right{
     content: "Curriculum Vitae";
+    color: #444444;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 9pt;
   }
 }
